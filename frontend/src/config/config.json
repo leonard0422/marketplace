@@ -1,0 +1,6 @@
+{
+    "BACKEND_URL" : "http://localhost:8001",
+    "BACKEND_URL_STORAGE" : "http://localhost:8001/storage",
+    "BACKEND_URL_AUTH" : "http://localhost:8001/api/auth",
+    "BACKEND_URL_FORM_ADMIN" : "http://localhost:8001/api"
+  }

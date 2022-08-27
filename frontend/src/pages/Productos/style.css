@@ -1,0 +1,17 @@
+.producto-scroll-y {
+    overflow-y: scroll;
+    max-height: 81.6vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.descripcion-producto {
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.tamaño-h-cesta-personalizado {
+    height: 75vh;
+    overflow-y: scroll;
+    border-bottom: 2px solid black;
+}

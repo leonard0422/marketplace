@@ -1,0 +1,38 @@
+.btn.btn-black {
+    border-radius: 0px !important;
+    padding: 0.5rem 1.75rem !important;
+}
+.btn-black {
+    color: #fff !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #00000000 !important;
+    border-bottom-color: #000000 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0) !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ced4da00 !important;
+    border-bottom-color: #000000 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0rem !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

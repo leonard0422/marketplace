@@ -1,0 +1,44 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "classnames": "^2.3.1",
+    "dotenv": "^16.0.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.5.1",
+    "material-icons": "^1.11.7",
+    "react": "^18.2.0",
+    "react-color": "^2.19.3",
+    "react-data-table-component": "^7.5.2",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-head": "^3.4.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.8",
+    "use-google-fonts": "^1.0.2",
+    "vex-dialog": "^1.1.0",
+    "vex-js": "^4.1.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "eslint": "^8.20.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "vite": "^3.0.0"
+  }
+}

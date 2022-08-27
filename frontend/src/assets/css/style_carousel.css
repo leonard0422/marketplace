@@ -1,0 +1,26 @@
+.container-fluid.y {
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* .y {
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+} */
+
+
+.mandatory-scroll-aling {
+    scroll-snap-align: start;
+}
+
+.h-vh-100 {
+    height: 100vh;
+}
+
+.max-w-70{
+    max-width: 70%;
+}

@@ -1,0 +1,73 @@
+
+.position-icon {
+    top: 0;
+    left: 0;
+}
+
+.offcanvasopa-start{
+	top: 0;
+	left: 0;
+	width: 536px;
+	border-right: 1px solid rgba(0, 0, 0, .2);
+	opacity: 0 !important;
+}
+
+.offcanvasopa{
+	position: fixed;
+	bottom: 0;
+	z-index: 1050;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	visibility: hidden;
+	background-color: #ffffff;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: 0;
+	transition: opacity 0.5s ease-in-out !important;
+}
+
+.offcanvasopa.show{
+	opacity: 1 !important;
+}
+
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #000000 !important;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000 !important;
+    background-color: #0d6efd00 !important;
+    font-weight: 700;
+}
+
+
+.navbar-toggler-personal {
+    color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    border: 0px !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.sticky-top{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}

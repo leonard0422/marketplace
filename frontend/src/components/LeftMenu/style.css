@@ -1,0 +1,36 @@
+.offcanvas-perosonalizado {
+    position: fixed;
+    bottom: 0;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: visible;
+    background-color: #ffffff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: 0;
+    /*opacity: 1 !important;*/
+}
+
+.offcanvas-start-personalizado {
+    height: 100vh;
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 536px;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    /*opacity: 1 !important;*/
+}
+
+.offcanvas-header-personalizado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.offcanvas-body-personalizado {
+    flex-grow: 1;
+    padding: 1rem 1rem;
+    overflow-y: auto;
+}
