@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import './App.css'
+import './style.css'
+import './market-place-4.css'
 import { Routes, Route, Link, Outlet } from 'react-router-dom'
 import Layout from './components/Layout'
 import Index from './pages/Index'
