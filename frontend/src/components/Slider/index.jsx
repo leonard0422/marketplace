@@ -9,7 +9,9 @@ function Slider () {
     <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
         <div className="carousel-inner">
             {
-                sliders.map((item, index) => {
+              (sliders.length === 0)
+                ? <div>No hay datos</div>
+                : sliders.map((item, index) => {
                   return <Group key={index} items={item.sub_sliders} ghoupIndex={index} />
                 })
             }
