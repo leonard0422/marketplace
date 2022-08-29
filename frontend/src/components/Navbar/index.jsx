@@ -7,6 +7,7 @@
 // import LeftMenu from '../LeftMenu'
 // import { useState } from 'react'
 // import NavbarUserInfo from '../NavbaruserInfo'
+import { Link } from 'react-router-dom'
 import { FaBars, FaRegHeart, FaShoppingBasket } from 'react-icons/fa'
 import Logo from './img/template/logo_light.png'
 
@@ -269,8 +270,8 @@ function Navbar () {
                                         <i className="icon-user"></i>
                                     </div>
                                     <div className="ps-block__right">
-                                        <a href="my-account.html">Login</a>
-                                        <a href="my-account.html">Register</a>
+                                        <Link to="login">Login</Link>
+                                        <Link to="login">Register</Link>
                                     </div>
                                 </div>
 
