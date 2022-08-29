@@ -7,6 +7,8 @@
 // import LeftMenu from '../LeftMenu'
 // import { useState } from 'react'
 // import NavbarUserInfo from '../NavbaruserInfo'
+import { FaBars, FaRegHeart, FaShoppingBasket } from 'react-icons/fa'
+import Logo from './img/template/logo_light.png'
 
 function Navbar () {
   //   const { user } = useAuth()
@@ -29,7 +31,7 @@ function Navbar () {
 					======================================--> */}
 
                             <a className="ps-logo" href="index.html">
-                                <img src="img/template/logo_light.png" alt="" />
+                                <img src={Logo} alt="" />
                             </a>
 
                             {/* <!--=====================================
@@ -39,7 +41,7 @@ function Navbar () {
                             <div className="menu--product-categories">
 
                                 <div className="menu__toggle">
-                                    <i className="icon-menu"></i>
+                                    <i className="icon-menu"><FaBars></FaBars></i>
                                     <span> Shop by Department</span>
                                 </div>
 
@@ -185,7 +187,8 @@ function Navbar () {
 						======================================--> */}
 
                                 <a className="header__extra" href="#">
-                                    <i className="icon-heart"></i><span><i>0</i></span>
+                                    <i className="icon-heart"><FaRegHeart size={'3.5rem'}></FaRegHeart></i>
+                                    <span><i>0</i></span>
                                 </a>
 
                                 {/* <!--=====================================
@@ -195,7 +198,8 @@ function Navbar () {
                                 <div className="ps-cart--mini">
 
                                     <a className="header__extra" href="#">
-                                        <i className="icon-bag2"></i><span><i>0</i></span>
+                                        <i className="icon-bag2"><FaShoppingBasket size={'3.5rem'}></FaShoppingBasket></i>
+                                        <span><i>0</i></span>
                                     </a>
 
                                     <div className="ps-cart__content">
@@ -547,7 +551,8 @@ function Navbar () {
                             <div className="ps-cart--mini">
 
                                 <a className="header__extra" href="#">
-                                    <i className="icon-bag2"></i><span><i>0</i></span>
+                                    <FaRegHeart size={5} color={'red'}></FaRegHeart>
+                                    {/* <span><i>0</i></span> */}
                                 </a>
 
                                 <div className="ps-cart__content">
