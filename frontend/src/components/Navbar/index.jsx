@@ -8,8 +8,14 @@
 // import { useState } from 'react'
 // import NavbarUserInfo from '../NavbaruserInfo'
 import { Link } from 'react-router-dom'
-import { FaBars, FaRegHeart, FaShoppingBasket } from 'react-icons/fa'
+import { FaRegHeart } from 'react-icons/fa'
+
 import Logo from './img/template/logo_light.png'
+import MenuNavbar from '../MenuNavbar'
+import BuscadorNavbar from '../BuscadorNavbar'
+import DeseosNavbar from '../DeseosNavbar'
+import CarritoNavbar from '../CarritoNavbar'
+import LoginAndRegisterNavbar from '../LoginAndRegisterNavbar'
 
 function Navbar () {
   //   const { user } = useAuth()
@@ -27,253 +33,40 @@ function Navbar () {
 
                         <div className="header__content-left">
 
-                            {/* <!--=====================================
-					Logo
-					======================================--> */}
+                            {/* Logo */}
 
-                            <a className="ps-logo" href="index.html">
+                            <Link className="ps-logo" to="/">
                                 <img src={Logo} alt="" />
-                            </a>
+                            </Link>
 
-                            {/* <!--=====================================
-					Menú
-					======================================--> */}
-
-                            <div className="menu--product-categories">
-
-                                <div className="menu__toggle">
-                                    <i className="icon-menu"><FaBars></FaBars></i>
-                                    <span> Shop by Department</span>
-                                </div>
-
-                                <div className="menu__content">
-                                    <ul className="menu--dropdown">
-                                        <li>
-                                            <a href="#"><i className="icon-star"></i> Hot Promotions</a>
-                                        </li>
-                                        <li className="menu-item-has-children has-mega-menu">
-                                            <a href="#"><i className="icon-laundry"></i> Consumer Electronic</a>
-                                            <div className="mega-menu">
-                                                <div className="mega-menu__column">
-                                                    <h4>Electronic<span className="sub-toggle"></span></h4>
-                                                    <ul className="mega-menu__list">
-                                                        <li><a href="#">Home Audio &amp; Theathers</a>
-                                                        </li>
-                                                        <li><a href="#">TV &amp; Videos</a>
-                                                        </li>
-                                                        <li><a href="#">Camera, Photos &amp; Videos</a>
-                                                        </li>
-                                                        <li><a href="#">Cellphones &amp; Accessories</a>
-                                                        </li>
-                                                        <li><a href="#">Headphones</a>
-                                                        </li>
-                                                        <li><a href="#">Videosgames</a>
-                                                        </li>
-                                                        <li><a href="#">Wireless Speakers</a>
-                                                        </li>
-                                                        <li><a href="#">Office Electronic</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="mega-menu__column">
-                                                    <h4>Accessories &amp; Parts<span className="sub-toggle"></span></h4>
-                                                    <ul className="mega-menu__list">
-                                                        <li><a href="#">Digital Cables</a>
-                                                        </li>
-                                                        <li><a href="#">Audio &amp; Video Cables</a>
-                                                        </li>
-                                                        <li><a href="#">Batteries</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-shirt"></i> Clothing &amp; Apparel</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-lampshade"></i> Home, Garden &amp; Kitchen</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-heart-pulse"></i> Health &amp; Beauty</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-diamond2"></i> Yewelry &amp; Watches</a>
-                                        </li>
-                                        <li className="menu-item-has-children has-mega-menu">
-                                            <a href="#"><i className="icon-desktop"></i> Computer &amp; Technology</a>
-                                            <div className="mega-menu">
-                                                <div className="mega-menu__column">
-                                                    <h4>Computer &amp; Technologies<span className="sub-toggle"></span></h4>
-                                                    <ul className="mega-menu__list">
-                                                        <li><a href="#">Computer &amp; Tablets</a>
-                                                        </li>
-                                                        <li><a href="#">Laptop</a>
-                                                        </li>
-                                                        <li><a href="#">Monitors</a>
-                                                        </li>
-                                                        <li><a href="#">Networking</a>
-                                                        </li>
-                                                        <li><a href="#">Drive &amp; Storages</a>
-                                                        </li>
-                                                        <li><a href="#">Computer Components</a>
-                                                        </li>
-                                                        <li><a href="#">Security &amp; Protection</a>
-                                                        </li>
-                                                        <li><a href="#">Gaming Laptop</a>
-                                                        </li>
-                                                        <li><a href="#">Accessories</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-baby-bottle"></i> Babies &amp; Moms</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-baseball"></i> Sport &amp; Outdoor</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-smartphone"></i> Phones &amp; Accessories</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-book2"></i> Books &amp; Office</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-car-siren"></i> Cars &amp; Motocycles</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-wrench"></i> Home Improments</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i className="icon-tag"></i> Vouchers &amp; Services</a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                            {/* <!-- End menu--> */}
+                            {/* Menu */}
+                            <MenuNavbar />
+                            {/* Fin Menu */}
 
                         </div>
                         {/* <!-- End Header Content Left--> */}
 
-                        {/* <!--=====================================
-				Search
-				======================================--> */}
+                        {/* Buscador */}
 
-                        <div className="header__content-center">
-                            <form className="ps-form--quick-search" action="index.html" method="get">
-                                <div className="form-group--icon">
-                                    <i className="icon-chevron-down"></i>
-                                    <select className="form-control">
-                                        <option value="1">All</option>
-                                        <option value="1">Smartphone</option>
-                                        <option value="1">Sounds</option>
-                                        <option value="1">Technology toys</option>
-                                    </select>
-                                </div>
-                                <input className="form-control" type="text" placeholder="I'm shopping for..." />
-                                <button>Search</button>
-                            </form>
-                        </div>
+                        <BuscadorNavbar />
+
+                        {/* Fin Buscador */}
 
                         <div className="header__content-right">
 
                             <div className="header__actions">
 
-                                {/* <!--=====================================
-						Wishlist
-						======================================--> */}
+                                {/* Lista de deseos */}
 
-                                <a className="header__extra" href="#">
-                                    <i className="icon-heart"><FaRegHeart size={'3.5rem'}></FaRegHeart></i>
-                                    <span><i>0</i></span>
-                                </a>
+                                <DeseosNavbar></DeseosNavbar>
 
-                                {/* <!--=====================================
-						Cart
-						======================================--> */}
+                                {/* Carrito */}
 
-                                <div className="ps-cart--mini">
+                                <CarritoNavbar></CarritoNavbar>
 
-                                    <a className="header__extra" href="#">
-                                        <i className="icon-bag2"><FaShoppingBasket size={'3.5rem'}></FaShoppingBasket></i>
-                                        <span><i>0</i></span>
-                                    </a>
+                                {/* Login & Registro */}
 
-                                    <div className="ps-cart__content">
-
-                                        <div className="ps-cart__items">
-
-                                            <div className="ps-product--cart-mobile">
-
-                                                <div className="ps-product__thumbnail">
-                                                    <a href="#">
-                                                        <img src="img/products/clothing/7.jpg" alt="" />
-                                                    </a>
-                                                </div>
-
-                                                <div className="ps-product__content">
-                                                    <a className="ps-product__remove" href="#">
-                                                        <i className="icon-cross"></i>
-                                                    </a>
-                                                    <a href="product-default.html">MVMTH Classical Leather Watch In Black</a>
-                                                    <p><strong>Sold by:</strong> YOUNG SHOP</p>
-                                                    <small>1 x $59.99</small>
-                                                </div>
-
-                                            </div>
-
-                                            <div className="ps-product--cart-mobile">
-
-                                                <div className="ps-product__thumbnail">
-                                                    <a href="#">
-                                                        <img src="img/products/clothing/5.jpg" alt="" />
-                                                    </a>
-                                                </div>
-
-                                                <div className="ps-product__content">
-                                                    <a className="ps-product__remove" href="#">
-                                                        <i className="icon-cross"></i>
-                                                    </a>
-                                                    <a href="product-default.html">Sleeve Linen Blend Caro Pane Shirt</a>
-                                                    <p><strong>Sold by:</strong> YOUNG SHOP</p>
-                                                    <small>1 x $59.99</small>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                        <div className="ps-cart__footer">
-
-                                            <h3>Sub Total:<strong>$59.99</strong></h3>
-                                            <figure>
-                                                <a className="ps-btn" href="shopping-cart.html">View Cart</a>
-                                                <a className="ps-btn" href="checkout.html">Checkout</a>
-                                            </figure>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                {/* <!--=====================================
-						Login and Register
-						======================================--> */}
-
-                                <div className="ps-block--user-header">
-                                    <div className="ps-block__left">
-                                        <i className="icon-user"></i>
-                                    </div>
-                                    <div className="ps-block__right">
-                                        <Link to="login">Login</Link>
-                                        <Link to="login">Register</Link>
-                                    </div>
-                                </div>
+                                <LoginAndRegisterNavbar></LoginAndRegisterNavbar>
 
                             </div>
                             {/* <!-- End Header Actions--> */}
@@ -291,49 +84,6 @@ function Navbar () {
 
             {/* <!-- End Header Actions--> */}
             <header className="header header--mobile" data-sticky="true">
-
-                <div className="header__top">
-
-                    <div className="header__left">
-
-                        <ul className="d-flex justify-content-center">
-                            <li><a href="#" target="_blank"><i className="fab fa-facebook-f mr-4"></i></a></li>
-                            <li><a href="#" target="_blank"><i className="fab fa-instagram mr-4"></i></a></li>
-                            <li><a href="#" target="_blank"><i className="fab fa-twitter mr-4"></i></a></li>
-                            <li><a href="#" target="_blank"><i className="fab fa-youtube mr-4"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div className="header__right">
-
-                        <ul className="navigation__extra">
-
-                            <li><a href="#">Sell on MarketPlace</a></li>
-                            <li><a href="#">Store List</a></li>
-                            <li><i className="icon-telephone"></i> Hotline:<strong> 1-800-234-5678</strong></li>
-
-                            <li>
-
-                                <div className="ps-dropdown language">
-                                    <a href="#">
-                                        <img src="img/template/en.png" alt="" />
-                                        English</a>
-
-                                    <ul className="ps-dropdown-menu">
-
-                                        <li><a href="#"><img src="img/template/es.png" alt="" /> Español</a></li>
-
-                                    </ul>
-
-                                </div>
-
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
 
                 <div className="navigation--mobile">
 
